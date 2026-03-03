@@ -13,6 +13,12 @@ public class Practice1on2 {
 
     System.out.println("when celsius is 35, fahrenheit is " + calculateTemperature(35.0));
 
+    System.out.println("when fahrenheit is 60, celsius is " + calculateTemperatureToFe(60.02));
+
+    System.out.println("when fahrenheit is 75, celsius is " + calculateTemperatureToFe(75.0));
+
+    System.out.println("when fahrenheit is 90, celsius is " + calculateTemperatureToFe(90.0));
+
   }
 
 
@@ -27,5 +33,9 @@ public class Practice1on2 {
     return new BigDecimal("9.0").divide(new BigDecimal("5.0"), RoundingMode.HALF_UP)
         .multiply(new BigDecimal(celsius)).add(new BigDecimal(32)).doubleValue();
 
+  }
+  public static double calculateTemperatureToFe(double fe) {
+
+    return new BigDecimal((fe-32)*(double)5/9).doubleValue();
   }
 }
