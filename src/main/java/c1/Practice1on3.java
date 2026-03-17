@@ -1,3 +1,5 @@
+package c1;
+
 import c1.bean.P3Student;
 import java.util.Arrays;
 
