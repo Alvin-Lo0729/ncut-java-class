@@ -12,9 +12,11 @@ public class Practice3Dash1 {
 
     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
     System.out.println("請輸入5~7個字元");
+
     try {
       String input = bufferedReader.readLine();
-      while (!input.equals(NUMBER)) {
+
+      while (!NUMBER.equals(input)) {
         if (StringUtils.isEmpty(input) || (input.length() < 5 || input.length() > 7)) {
           System.out.println("規則不符，請重新輸入");
         } else {
@@ -30,4 +32,8 @@ public class Practice3Dash1 {
 
   }
 
+
+  public void test1() {
+
+  }
 }
