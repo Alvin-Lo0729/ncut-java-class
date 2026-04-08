@@ -8,20 +8,22 @@ public class Practice3Dash2 {
   public static void main(String[] args) {
 
     int[] numbers = getArray();
-    if (numbers.length != 5) {
+    while (numbers.length != 5) {
       System.out.println("數字個數必須為5個");
-    } else {
-      System.out.println("共" + numbers.length + "個數字");
-      for (int i = 0; i < numbers.length; i++) {
-        System.out.println("第" + (i + 1) + "個數字是：" + numbers[i]);
-      }
-      int[] sortAsc = sortAsc(copyOf(numbers, numbers.length));
-      int[] sortDesc = sortDesc(copyOf(numbers, numbers.length));
-      System.out.println(Arrays.toString(sortAsc));
-      System.out.println(Arrays.toString(sortDesc));
-
-      System.out.println("中位數是：" + sortDesc[2]);
+      numbers = getArray();
     }
+
+    System.out.println("共" + numbers.length + "個數字");
+    for (int i = 0; i < numbers.length; i++) {
+      System.out.println("第" + (i + 1) + "個數字是：" + numbers[i]);
+    }
+    int[] sortAsc = sortAsc(copyOf(numbers, numbers.length));
+    int[] sortDesc = sortDesc(copyOf(numbers, numbers.length));
+    System.out.println(Arrays.toString(sortAsc));
+    System.out.println(Arrays.toString(sortDesc));
+
+    System.out.println("中位數是：" + sortDesc[2]);
+
   }
 
   public static int[] getArray() {
