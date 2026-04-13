@@ -10,14 +10,18 @@ public class Exam1 {
 
   public static void main(String[] args) {
 
-    String string = getString();
 
-    while (check(string)) {
-      int[] intValue = getCharArrayFromString(string);
-      int[] sortValue = sortDesc(intValue);
-      char[] chars = transIntArrayToCharArray(sortValue);
-      System.out.println(chars);
-      string = getString();
+
+    while (true) {
+      String string = getString();
+      if(check(string)){
+        int[] intValue = getCharArrayFromString(string);
+        int[] sortValue = sortDesc(intValue);
+        char[] chars = transIntArrayToCharArray(sortValue);
+        System.out.println(chars);
+      }else{
+        System.out.println("這是我的學號");
+      }
     }
 
   }
