@@ -21,5 +21,4 @@ public class Practice3Dash4 {
     }
     return array;
   }
-
 }
