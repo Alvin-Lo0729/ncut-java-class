@@ -78,9 +78,9 @@ public class Exam1 {
   }
 
   /**
-   * 將
+   * 將int array轉成char array
    *
-   * @return
+   * @return char array
    */
   public static char[] transIntArrayToCharArray(int[] intArray) {
 
