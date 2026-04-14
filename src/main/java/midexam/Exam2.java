@@ -5,17 +5,14 @@ import java.util.Random;
 public class Exam2 {
 
   private static final int MIN = 50;
-  private static final int MAX = 100;
+  private static final int MAX = 60;
   private static final int NUMBER = 50;
   private static final int COUNT = 5;
 
   public static void main(String[] args) {
     int[] intArray = getRandomNumber();
-
     printValue(intArray);
     printFirstValue(intArray);
-
-
   }
 
   private static void printFirstValue(int[] intArray) {
