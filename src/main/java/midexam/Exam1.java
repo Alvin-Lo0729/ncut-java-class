@@ -9,21 +9,18 @@ public class Exam1 {
   public static final int NUMBER = 3;
 
   public static void main(String[] args) {
-
-
-
-    while (true) {
-      String string = getString();
-      if(check(string)){
-        int[] intValue = getCharArrayFromString(string);
-        int[] sortValue = sortDesc(intValue);
-        char[] chars = transIntArrayToCharArray(sortValue);
-        System.out.println(chars);
-      }else{
-        System.out.println("這是我的學號");
-      }
+    String string = getString();
+    while (check(string)) {
+      //這邊是ＸＸＸ
+      int[] intValue = getCharArrayFromString(string);
+      //這裏做排序
+      int[] sortValue = sortAsc(intValue);
+      //這裏轉成char
+      char[] chars = transIntArrayToCharArray(sortValue);
+      System.out.println(chars);
+      string = getString();
     }
-
+    System.out.println("這是我的學號");
   }
 
   /**
