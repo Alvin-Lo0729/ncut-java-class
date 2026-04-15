@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 public class Exam1 {
 
-  public static final String SCHOOL_NUMBER = "9b417004";
+  public static final String SCHOOL_NUMBER = "9B417004";
 
-  public static final int NUMBER = 3;
+  public static final int NUMBER = 5;
 
   public static void main(String[] args) {
     String string = getString();
     while (check(string)) {
       //這邊是ＸＸＸ
       int[] intValue = getCharArrayFromString(string);
-      //這裏做排序
+      //這裏做排序º
       int[] sortValue = sortAsc(intValue);
       //這裏轉成char
       char[] chars = transIntArrayToCharArray(sortValue);
