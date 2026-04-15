@@ -6,7 +6,7 @@ public class Exam3 {
 
   public static void main(String[] args) {
     minToMore();
-    System.out.println("---------------");
+    System.out.println();
     moreToMinToMore();
   }
 
@@ -27,7 +27,7 @@ public class Exam3 {
       int start = i >= LEVEL ? ((i * 2) - total) + 2 : total - (i * 2);
       int space = (total - start) / 2;
       System.out.println(
-          " ".repeat(space) + "*".repeat(start) + " ".repeat(space));
+          " ".repeat(space) + String.valueOf(start).repeat(start) + " ".repeat(space));
     }
   }
 
