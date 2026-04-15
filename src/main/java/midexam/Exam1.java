@@ -45,9 +45,8 @@ public class Exam1 {
       for (int j = i + 1; j < intValue.length; j++) {
         int valueA = intValue[i];
         int valueB = intValue[j];
-        int temp = 0;
         if (valueA > valueB) {
-          temp = intValue[i];
+          int temp = intValue[i];
           intValue[i] = intValue[j];
           intValue[j] = temp;
         }
@@ -67,9 +66,8 @@ public class Exam1 {
       for (int j = i + 1; j < intValue.length; j++) {
         int valueA = intValue[i];
         int valueB = intValue[j];
-        int temp = 0;
         if (valueA < valueB) {
-          temp = intValue[i];
+          int temp = intValue[i];
           intValue[i] = intValue[j];
           intValue[j] = temp;
         }
