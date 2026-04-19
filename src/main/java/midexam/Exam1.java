@@ -13,7 +13,7 @@ public class Exam1 {
     while (checkStringIsNotSame(string)) {
       //這邊是ＸＸＸ
       int[] intValue = getCharArrayFromString(string);
-      //這裏做排序º
+      //這裏做排序
       int[] sortValue = sortAsc(intValue);
       //這裏轉成char
       char[] chars = transIntArrayToCharArray(sortValue);
