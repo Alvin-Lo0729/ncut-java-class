@@ -11,11 +11,11 @@ public class Exam1 {
   public static void main(String[] args) {
     String string = getString();
     while (checkStringIsNotSame(string)) {
-      //這邊是ＸＸＸ
+      //這邊是將字串轉 char array 再轉 int array
       int[] intValue = getCharArrayFromString(string);
       //這裏做排序
       int[] sortValue = sortAsc(intValue);
-      //這裏轉成char
+      //這裏將int array轉成char
       char[] chars = transIntArrayToCharArray(sortValue);
       System.out.println(chars);
       string = getString();

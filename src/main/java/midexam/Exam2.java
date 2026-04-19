@@ -15,8 +15,13 @@ public class Exam2 {
     printFirstValue(intArray);
   }
 
+  /**
+   * 這裡做撈取前n名的部分，並且有並列的也一併印出
+   *
+   * @param intArray 抽獎結果
+   */
   private static void printFirstValue(int[] intArray) {
-    int lastMax = NUMBER+1;
+    int lastMax = NUMBER + 1;
     int lastCount = Math.min((MAX - MIN + 1), COUNT);
     for (int i = 0; i < lastCount; i++) {
       int currentMax = 0;
@@ -44,6 +49,11 @@ public class Exam2 {
     }
   }
 
+  /**
+   * 列印出 抽獎結果
+   *
+   * @param ary 抽獎結果
+   */
   public static void printValue(int[] ary) {
     int countAll = 0;
     for (int i = 0; i < ary.length; i++) {
@@ -53,6 +63,12 @@ public class Exam2 {
     System.out.println("共開獎" + countAll + "次");
   }
 
+
+  /**
+   * 取得亂數陣列，依照題目規定設定最小值到最大值，與最大抽獎次數
+   *
+   * @return 最後抽獎結果
+   */
   public static int[] getRandomNumber() {
     Random random = new Random();
     int[] intArray = new int[MAX - MIN + 1];
