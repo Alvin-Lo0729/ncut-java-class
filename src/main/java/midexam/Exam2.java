@@ -16,7 +16,7 @@ public class Exam2 {
   }
 
   private static void printFirstValue(int[] intArray) {
-    int lastMax = NUMBER;
+    int lastMax = NUMBER+1;
     int lastCount = Math.min((MAX - MIN + 1), COUNT);
     for (int i = 0; i < lastCount; i++) {
       int currentMax = 0;
