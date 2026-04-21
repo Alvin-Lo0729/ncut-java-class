@@ -112,8 +112,7 @@ public class Exam1 {
    * @return 相同為FALSE，不同為TRUE
    */
   public static boolean check(String string) {
-    String compareString = SCHOOL_NUMBER.substring(SCHOOL_NUMBER.length() - NUMBER);
-    return !string.equals(compareString);
+    return !SCHOOL_NUMBER.endsWith(string);
   }
 
 
