@@ -5,8 +5,7 @@ public class Exam3 {
   private static final int LEVEL = 5;
 
   public static void main(String[] args) {
-    minToMore();
-    System.out.println();
+
     moreToMinToMore();
   }
 
@@ -24,10 +23,25 @@ public class Exam3 {
     int total = (LEVEL * 2) - 1;
 
     for (int i = 0; i < total; i++) {
-      int start = i >= LEVEL ? ((i * 2) - total) + 2 : total - (i * 2);
-      int space = (total - start) / 2;
+      int number = 8;
+      int start;
+      int space;
+      if (i < 4) {
+        number = 8 - i * 2;
+        start = 6 - i;
+        space = i;
+      } else if (i == 4) {
+        number = 0;
+        start = 0;
+        space = 5;
+      } else {
+        number = i * 2 - 8;
+        start = i - 2;
+        space = 6 - start;
+      }
+
       System.out.println(
-          " ".repeat(space) + String.valueOf(start).repeat(start) + " ".repeat(space));
+          " ".repeat(space) + String.valueOf(number).repeat(start == 0 ? 1 : start));
     }
   }
 

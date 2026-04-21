@@ -6,7 +6,7 @@ public class Exam1 {
 
   public static final String SCHOOL_NUMBER = "9B417004";
 
-  public static final int NUMBER = 5;
+  public static final int NUMBER = 8;
 
   public static void main(String[] args) {
     String string = getString();
@@ -14,13 +14,13 @@ public class Exam1 {
       //這邊是ＸＸＸ
       int[] intValue = getCharArrayFromString(string);
       //這裏做排序
-      int[] sortValue = sortAsc(intValue);
+      int[] sortValue = sortDesc(intValue);
       //這裏轉成char
       char[] chars = transIntArrayToCharArray(sortValue);
       System.out.println(chars);
       string = getString();
     }
-    System.out.println("這是我的學號");
+    System.out.println("剛好是我的學號" + string);
   }
 
   /**
@@ -112,7 +112,9 @@ public class Exam1 {
    * @return 相同為FALSE，不同為TRUE
    */
   public static boolean check(String string) {
-    return !SCHOOL_NUMBER.endsWith(string);
+
+    String compareString = SCHOOL_NUMBER.substring(SCHOOL_NUMBER.length() - NUMBER);
+    return !string.equals(compareString);
   }
 
 
