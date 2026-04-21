@@ -10,8 +10,8 @@ public class Exam1 {
 
   public static void main(String[] args) {
     String string = getString();
-    while (check(string)) {
-      //這邊是ＸＸＸ
+    while (checkStringIsNotSame(string)) {
+      //這邊是將字串轉 char array 再轉 int array
       int[] intValue = getCharArrayFromString(string);
       //這裏做排序
       int[] sortValue = sortDesc(intValue);
@@ -111,7 +111,7 @@ public class Exam1 {
    * @param string 輸入的字串
    * @return 相同為FALSE，不同為TRUE
    */
-  public static boolean check(String string) {
+  public static boolean checkStringIsNotSame(String string) {
 
     String compareString = SCHOOL_NUMBER.substring(SCHOOL_NUMBER.length() - NUMBER);
     return !string.equals(compareString);
