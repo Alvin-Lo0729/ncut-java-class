@@ -52,7 +52,7 @@ public class Sale extends Employer {
     return isOverSeason1() && isOverSeason2() && isOverSeason3() && isOverSeason4();
   }
 
-  public boolean overPrice(BigInteger bigInteger) {
+  private boolean overPrice(BigInteger bigInteger) {
     return bigInteger.compareTo(BigInteger.valueOf(1000000)) >= 0;
   }
 
