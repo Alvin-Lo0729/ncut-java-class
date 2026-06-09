@@ -14,11 +14,14 @@ public class Practice6Dash2 {
 
       int value = height - width;
       if (value < 100) {
+        //這裡丟exception
         throw new IllegalArgumentException("該做做運動了!");
       } else if (value > 115) {
+        //這裡丟exception
         throw new IllegalArgumentException("要多吃點飯!");
       }
     } catch (Exception e) {
+      //這裡會將exception內容印出來
       System.out.println(e.getMessage());
     } finally {
       System.out.println("祝你天天快樂!");
