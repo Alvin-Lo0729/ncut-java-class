@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class Practice7Dash1 {
 
   public static void main(String[] args) {
-    try (ExecutorService pool = Executors.newFixedThreadPool(3)) {
+    try (ExecutorService pool = Executors.newVirtualThreadPerTaskExecutor()) {
       CountDownLatch gate = new CountDownLatch(1); // 閘門，初始 1
 
       pool.submit(new Task1(gate));
