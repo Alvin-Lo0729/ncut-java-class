@@ -7,7 +7,6 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 public class Practice7Dash1 {
 
@@ -25,9 +24,7 @@ public class Practice7Dash1 {
 //      pool.submit(new Task2(gate));
 //      pool.submit(new Task3(gate));
       gate.countDown();
-      executor.shutdown(); // 不再接新任務
-      executor.awaitTermination(Long.MAX_VALUE, TimeUnit.SECONDS); // 等全部跑完
-
+      CompletableFuture.allOf(completableFuture, completableFuture2, completableFuture3).join();
       System.out.println("執行緒結束");
 
     } catch (Exception e) {
