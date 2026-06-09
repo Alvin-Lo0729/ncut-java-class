@@ -19,7 +19,6 @@ public class Practice7Dash1 {
       pool.submit(new Task3(gate));
       gate.countDown();
       pool.shutdown(); // 不再接新任務
-
       pool.awaitTermination(Long.MAX_VALUE, TimeUnit.SECONDS); // 等全部跑完
 
       System.out.println("執行緒結束");
