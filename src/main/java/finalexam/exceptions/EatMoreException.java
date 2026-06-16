@@ -11,8 +11,5 @@ public class EatMoreException extends RuntimeException {
     super(s);
   }
 
-  public EatMoreException() {
-    super("要多吃點飯了");
-  }
 
 }
