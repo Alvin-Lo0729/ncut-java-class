@@ -16,10 +16,10 @@ public class FinalExam1 {
       //這邊做數值處理
       int value = height - width;
       if (value < 100) {
-        //這裡丟exception
+        //這裡輸入老師要的訊息，並丟出exception
         throw new WeightOverExceptions("該去運動了");
       } else if (value > 120) {
-        //這裡丟exception
+        //這裡輸入老師要的訊息，並丟出exception
         throw new EatMoreException("該吃多一點");
       }
     } catch (Exception e) {
