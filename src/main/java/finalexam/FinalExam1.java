@@ -1,7 +1,5 @@
 package finalexam;
 
-import finalexam.exceptions.EatMoreException;
-import finalexam.exceptions.WeightOverExceptions;
 import java.util.Scanner;
 
 public class FinalExam1 {

@@ -1,4 +1,4 @@
-package finalexam.task;
+package finalexam;
 
 public class ExamFinalTask implements Runnable {
 

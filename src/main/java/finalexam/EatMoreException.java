@@ -1,4 +1,4 @@
-package finalexam.exceptions;
+package finalexam;
 
 import java.io.Serial;
 
