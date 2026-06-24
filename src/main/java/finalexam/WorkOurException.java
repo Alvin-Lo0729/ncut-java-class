@@ -2,13 +2,13 @@ package finalexam;
 
 import java.io.Serial;
 
-public class WeightOverExceptions extends RuntimeException {
+public class WorkOurException extends RuntimeException {
 
   @Serial
   private static final long serialVersionUID = 969779394946857704L;
 
 
-  public WeightOverExceptions(String s) {
+  public WorkOurException(String s) {
     super(s);
   }
 }

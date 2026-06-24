@@ -2,12 +2,12 @@ package finalexam;
 
 import java.io.Serial;
 
-public class EatMoreException extends RuntimeException {
+public class FixException extends RuntimeException {
 
   @Serial
   private static final long serialVersionUID = 7511908878812471720L;
 
-  public EatMoreException(String s) {
+  public FixException(String s) {
     super(s);
   }
 
